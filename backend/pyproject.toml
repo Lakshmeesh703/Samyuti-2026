@@ -1,0 +1,18 @@
+[project]
+name = "samyuti-chant-backend"
+version = "0.1.0"
+description = "IKS Hackathon PoC: Chanda + rhythm + melody constrained Sanskrit chanting"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "pydantic>=2.6",
+  "indic-transliteration>=2.3",
+  "edge-tts>=6.1",
+  "openai>=1.40",
+  "python-multipart>=0.0.9",
+  "python-dotenv>=1.0.1",
+]
+
+[tool.uvicorn]
+factory = false
